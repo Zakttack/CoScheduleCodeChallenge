@@ -1,0 +1,19 @@
+{
+  "name": "coschedulecodechallenge",
+  "version": "1.0.0",
+  "description": "This is a Code Challenge for CoSchedule",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zakttack/CoScheduleCodeChallenge.git"
+  },
+  "author": "Zak Ray Merrigan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zakttack/CoScheduleCodeChallenge/issues"
+  },
+  "homepage": "https://github.com/Zakttack/CoScheduleCodeChallenge#readme"
+}
