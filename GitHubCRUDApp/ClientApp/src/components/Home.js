@@ -66,11 +66,11 @@ export class Home extends Component {
                                 key={index} 
                                 onClick={() => this.setState({selectedIndex: index})}
                             >
-                                <td><input type="text" value={row.value} onChange={(a) =>
+                                <td><input type="text" value={row.Value} onChange={(a) =>
                                 this.setState({updatedValue: a.target.value})}/></td>
-                                <td><input type="text" value={row.rating} onChange={(b) =>
+                                <td><input type="text" value={row.Rating} onChange={(b) =>
                                 this.setState({updatedRating: b.target.valueAsNumber})}/></td>
-                                <td><input type="text" value={row.comment} onChange={(c) =>
+                                <td><input type="text" value={row.Comment} onChange={(c) =>
                                 this.setState({updatedComment: c.target.value})}/></td>
                             </tr>
                         ))}
