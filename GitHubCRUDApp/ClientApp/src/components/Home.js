@@ -66,12 +66,12 @@ export class Home extends Component {
                                 key={index} 
                                 onClick={() => this.setState({selectedIndex: index})}
                             >
-                                <td><input type="text" value={row.value} onChange={(e) =>
-                                this.setState({updatedValue: e.target.value})}/></td>
-                                <td><input type="text" value={row.rating} onChange={(e) =>
-                                this.setState({updatedRating: e.target.valueAsNumber})}/></td>
-                                <td><input type="text" value={row.comment} onChange={(e) =>
-                                this.setState({updatedComment: e.target.value})}/></td>
+                                <td><input type="text" value={row.value} onChange={(a) =>
+                                this.setState({updatedValue: a.target.value})}/></td>
+                                <td><input type="text" value={row.rating} onChange={(b) =>
+                                this.setState({updatedRating: b.target.valueAsNumber})}/></td>
+                                <td><input type="text" value={row.comment} onChange={(c) =>
+                                this.setState({updatedComment: c.target.value})}/></td>
                             </tr>
                         ))}
                     </tbody>
@@ -86,7 +86,7 @@ export class Home extends Component {
                     <p>Rating: <input type="text" value={this.state.newRating} onChange={(e) =>
                     this.setState({newRating: e.target.valueAsNumber})}/></p>
                     <p>Comment: <input type="text" value={this.state.newComment} onChange={(e) =>
-                    this.setState({newValue: e.target.value})}/></p>
+                    this.setState({newComment: e.target.value})}/></p>
                     <button type="button" onClick={() => this.createRecord()}>Create Record</button>
                 </div>
             </div>
