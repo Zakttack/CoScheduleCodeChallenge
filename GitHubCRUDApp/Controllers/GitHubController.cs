@@ -19,7 +19,7 @@ namespace GitHubCRUDApp.Controllers
         }
 
         [HttpGet]
-        [Route("/auth")]
+        [Route("api/GitHub/auth")]
         public async Task<IActionResult> AuthenticateAsync(string code)
         {
             HttpClient client = new();

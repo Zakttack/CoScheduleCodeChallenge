@@ -236,7 +236,7 @@ _Pvt_Extensions
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/GitHubCRUDApp/ClientApp/node_modules
 
 # testing
 /coverage
