@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Home } from './components/Home';
 
 function App() {
   const redirecturi = 'https://localhost:44469';
@@ -10,7 +11,7 @@ function App() {
     }
   }, []);
   return (
-    <h1>{redirecturi}</h1>
+    <Home></Home>
   );
 }
 
