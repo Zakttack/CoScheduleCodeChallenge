@@ -1,3 +1,9 @@
 .deleteAndUpdateButtons {
     padding: 1px;
 }
+
+.createControls {
+    border-style: solid;
+    border-color: darkgreen;
+    border-width: 2px;
+}

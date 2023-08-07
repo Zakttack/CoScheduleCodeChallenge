@@ -40,6 +40,11 @@ export class Home extends Component {
         .then(data => this.setState({items: data}))
     }
 
+    updateRecord() {
+        fetch('/api/Record/${this.state.selectedIndex}/${this.state.updatedValue}/${this.state.updatedRating}/${this.state.updatedComment}',
+        {method: 'POST'}).then((response) => console.log(response))
+    }
+
     render() {
         return (
             <div>
@@ -72,8 +77,8 @@ export class Home extends Component {
                     </tbody>
                 </table>
                 <div className="deleteAndUpdateButtons">
-                    <button type="button" id="updateButton">Update Record</button>
-                    <button type="button" id="deleteButton">Delete Record</button>
+                    <button type="button" id="updateButton" onClick={() => this.updateRecord()}>Update Record</button>
+                    <button type="button" id="deleteButton" onClick={() => this.deleteRecord()}>Delete Record</button>
                 </div><br/>
                 <div className="createControls">
                     <p>Value: <input type="text" value={this.state.newValue} onChange={(e) =>
